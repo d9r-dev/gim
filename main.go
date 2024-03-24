@@ -15,7 +15,7 @@ func main() {
 	a := app.New()
 	w := a.NewWindow("gim")
 
-	w.SetContent(widget.NewLabel(string(file)))
+	w.SetContent(widget.NewTextGridFromString(string(file)))
 	w.ShowAndRun()
 }
 
