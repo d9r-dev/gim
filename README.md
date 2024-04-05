@@ -1,20 +1,16 @@
-Just another text editor. On my journey to learn another programming
-language other than javascript I came across the list of 
-interesting projects every software developer should try from 
-Austin Henley [see](https://austinhenley.com/blog/challengingprojects.html).
+# README
 
-## Data Structure
-First things first. What data structure should one use for displaying the textfiles? Following resources were usefull:
-* [Text Editor: Data Structures](https://austinhenley.com/blog/challengingprojects.html)
+## About
 
-Basically, there is no way you could use an array for obvious reasons.
-Other than that there are some data structures to consider:
+This is the official Wails Svelte-TS template.
 
-* [Rope](https://en.wikipedia.org/wiki/Rope_(data_structure))
-* [Gap Buffer](https://en.wikipedia.org/wiki/Gap_buffer)
-* [Piece Table](https://en.wikipedia.org/wiki/Piece_table)
+## Live Development
 
-To make a long story short: Ropes are hard to write and maintain. 
-Gap Buffers are okay but can be inefficient when editing large files and jumping around.
-Piece Tables are pretty much optimal for this purpose, and they are used for example by Word.
-Also, you can implement undo/redo pretty easily with a piece table.
+To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
+server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
+and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
+to this in your browser, and you can call your Go code from devtools.
+
+## Building
+
+To build a redistributable, production mode package, use `wails build`.
